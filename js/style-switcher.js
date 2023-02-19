@@ -10,13 +10,21 @@ window.addEventListener("scroll", () =>{
         document.querySelector(".style-switcher").classList.remove("open");
     }
 })
-/*window.addEventListener("click", () => {
-    document.querySelector(".style-switcher open").classList.remove("open");
-})*/
-const styleColor1 = document.querySelector(".color-1");
-styleColor1.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.remove("open");
-})
+/* ================================= theme colors ================================= */
+const alternateStyles = document.querySelectorAll(".alternate-style");
+function setActiveStyle(color)
+{
+    alternateStyles.forEach((style) => {
+        if(color === style.getAttribute("title"))
+        {
+            style.removeAttribute("disabled");
+        }
+        else
+        {
+            style.setAttribute("disabled","true");
+        }
+    })
+}
 const styleColor2 = document.querySelector(".color-2");
 styleColor2.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.remove("open");
@@ -33,32 +41,10 @@ const styleColor5 = document.querySelector(".color-5");
 styleColor5.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.remove("open");
 })
-/* ================================= theme colors ================================= */
-const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color)
-{
-    alternateStyles.forEach((style) => {
-        if(color === style.getAttribute("title"))
-        {
-            style.removeAttribute("disabled");
-        }
-        else
-        {
-            style.setAttribute("disabled","true");
-        }
-    })
-}
-window.addEventListener("click", () =>{
-    if( document.querySelector(".style-switcher open").classList.contains("open"))
-    {
-        document.querySelector(".style-switcher open").classList.remove("open");
-    }
+const styleColor1 = document.querySelector(".color-1");
+styleColor1.addEventListener("click", () => {
+    document.querySelector(".style-switcher").classList.remove("open");
 })
-/*const themeColor = document.querySelector(".colors");
-themeColor.removeEventListener("click", () => {
-    document.querySelector(".colors").classList.toggle("close");
-})*/
-
 /* ================================= theme light and dark mode ================================= */
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () =>{
