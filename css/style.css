@@ -45,7 +45,6 @@ ul
     display: block;
     padding: 0 30px;
     opacity: 1;
-    position: fixed;
     left: 270px;
     top: 0;
     right: 0;
@@ -65,20 +64,14 @@ ul
     opacity: 1;
     animation: slideSection 1s ease;
 }
-@keyframes slideSection 
-{
-    0%
-    {
-        transform: translateX(100%);
-    }    
-    100%
-    {
-        transform: translateX(0%);
-    }
-}
+
 .hiden
 {
     display: none !important;
+}
+.main-content
+{
+    padding-left: 270px;
 }
 .padd-15
 {
@@ -314,18 +307,19 @@ ul
 }
 .home .home-info
 {
+    margin-top: 5px;
     flex: 0 0 60%;
     max-width: 60%;
 }
 h3.hello
 {
     font-family: poppins;
-    font-size: 32px;
+    font-size: 35px;
     margin: 15px 0;
 }
 h3.hello span
 {
-    font-family: 'Clicker Script' , cursive;
+    font-family: poppins;
     font-size: 35px;
     font-weight: 700;
     color: var(--skin-color);
@@ -333,7 +327,7 @@ h3.hello span
 h3.my-profession
 {
     font-family: poppins;
-    font-size: 30px;
+    font-size: 31px;
     margin: 15px 0;    
 }
 .typing
@@ -438,7 +432,7 @@ h3.my-profession
 {
     font-weight: 600;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 17px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
@@ -757,7 +751,7 @@ h3.my-profession
 }
 .contact .contact-info-item h4
 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-black-900);
     text-transform: capitalize;
@@ -891,5 +885,33 @@ h3.my-profession
     {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .portfolio-img img
+    {
+     height: 200px;   
+    }
+    .main-content
+    {
+    padding-left: 0px;
+    }
+    .about .about-content .personal-info .info-item p
+    {
+        font-size: 13.5px;
+    }
+    .service .service-item .service-item-inner h4
+    {
+        font-size: 16px;
+    }
+    .service .service-item .service-item-inner p
+    {
+        font-size: 14px;
+    }
+    .contact .contact-info-item h4
+    {
+        font-size: 18px;
+    }
+    .contact .contact-info-item p
+    {
+        font-size: 13px;
     }
 }
