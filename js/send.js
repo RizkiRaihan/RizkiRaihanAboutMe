@@ -31,6 +31,6 @@ form.addEventListener('submit', async function(e){
     body: new FormData(form)
   } 
   );
-  alert("berhasil di kirim");
+    swal("Thank You!", "has sent a message!", "success");
   form.reset();
 });
