@@ -50,7 +50,7 @@ ul
     right: 0;
     bottom: 0;
     z-index: 0;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
@@ -233,7 +233,7 @@ ul
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    background: var(--text-black-100);
+    background: var(--bg-black-900);
     display: none;
     align-items: center;
     justify-content: center;
