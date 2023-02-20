@@ -25,24 +25,28 @@ function setActiveStyle(color)
         }
     })
 }
+const styleColor1 = document.querySelector(".color-1");
+styleColor1.addEventListener("click", () => {
+    document.querySelector(".style-switcher").classList.remove("open");
+})
 const styleColor2 = document.querySelector(".color-2");
 styleColor2.addEventListener("click", () => {
+    document.querySelector(".color-1").classList.remove("open");
     document.querySelector(".style-switcher").classList.remove("open");
 })
 const styleColor3 = document.querySelector(".color-3");
 styleColor3.addEventListener("click", () => {
+    document.querySelector(".color-1").classList.remove("open");
     document.querySelector(".style-switcher").classList.remove("open");
 })
 const styleColor4 = document.querySelector(".color-4");
 styleColor4.addEventListener("click", () => {
+    document.querySelector(".color-1").classList.remove("open");
     document.querySelector(".style-switcher").classList.remove("open");
 })
 const styleColor5 = document.querySelector(".color-5");
 styleColor5.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.remove("open");
-})
-const styleColor1 = document.querySelector(".color-1");
-styleColor1.addEventListener("click", () => {
+    document.querySelector(".color-1").classList.remove("open");
     document.querySelector(".style-switcher").classList.remove("open");
 })
 /* ================================= theme light and dark mode ================================= */
