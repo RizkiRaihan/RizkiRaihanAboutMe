@@ -315,6 +315,11 @@ ul
     display: flex;
     color: var(--text-black-900);   
 }
+.home .container
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .home .home-info
 {
     margin-top: 5px;
@@ -324,20 +329,21 @@ ul
 h3.hello
 {
     font-family: poppins;
-    font-size: 35px;
+    font-size: 40px;
     margin: 15px 0;
+    margin-bottom: -10px;
 }
 h3.hello span
 {
     font-family: poppins;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--skin-color);
 }
 h3.my-profession
 {
     font-family: poppins;
-    font-size: 31px;
+    font-size: 35px;
     margin: 15px 0;    
 }
 .typing
@@ -347,7 +353,7 @@ h3.my-profession
 .home-info p
 {
     font-family: poppins;   
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-size: 18px;
     color: var(--text-black-700);
 }
@@ -370,8 +376,8 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 100px;
+    bottom: -30px;
 }
 .home-img::before
 {
@@ -381,8 +387,8 @@ h3.my-profession
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 20px;
-    top: -40px;
+    left: 100px;
+    top: -30px;
 }
 .home .home-img img
 {
@@ -678,7 +684,7 @@ h3.my-profession
 .portfolio .portfolio-heading h2
 {
     color: var(--text-black-900);
-    font-weight: 500;
+    font-weight: 600;
 }
 .portfolio .portfolio-item
 {
@@ -871,7 +877,9 @@ h3.my-profession
     }
     .home .home-img
     {
-        display: none;
+        padding: auto;
+        margin-top: 70px;
+        margin-left: 34px;
     }
 }
 @media (max-width:767px)
@@ -923,5 +931,45 @@ h3.my-profession
     .contact .contact-info-item p
     {
         font-size: 13px;
+    }
+    h3.hello
+    {
+    font-family: poppins;
+    font-size: 35px;
+    margin: 15px 0;
+    font-weight: 650;
+    margin-bottom: -10px;
+    }
+    h3.hello span
+    {
+        font-size: 35px;
+    }
+    h3.my-profession
+    {
+    font-family: poppins;
+    font-size: 31px;
+    margin: 15px 0;    
+    }
+    .home-img::after
+    {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: -170px;
+    bottom: -30px;
+    }
+    .home-img::before
+    {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -30px;
     }
 }
