@@ -388,7 +388,7 @@ h3.my-profession
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 100px;
-    top: -30px;
+    top: -40px;
 }
 .home .home-img img
 {
@@ -592,7 +592,6 @@ h3.my-profession
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
-    text-transform: capitalize;
     color: var(--text-black-900);
 }
 .about .about-content .timeline .timeline-text
@@ -958,7 +957,7 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: -170px;
+    right: -175px;
     bottom: -30px;
     }
     .home-img::before
@@ -970,6 +969,6 @@ h3.my-profession
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: -20px;
-    top: -30px;
+    top: -40px;
     }
 }
