@@ -900,8 +900,9 @@ h3.my-profession
     }
     .contact .contact-info-item
     {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
     }
     .portfolio-img img
     {
@@ -930,6 +931,8 @@ h3.my-profession
     .contact .contact-info-item p
     {
         font-size: 15px;
+        margin-top: -30px;
+        text-decoration: underline;
     }
     h3.hello
     {
@@ -970,5 +973,49 @@ h3.my-profession
     border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
+    }
+    .contact .contact-info-item h4
+    {
+    display: none !important;
+    }
+    .contact .contact-info-item .icon .fa
+    { 
+        margin-right: 280px;
+        padding-top: 30px;
+    }
+    .contact .contact-info-item .icon
+    {
+        display: block;
+    }
+    .contact .contact-info-item .instagram p
+    {
+       text-indent: -160px;
+    }
+    .contact .contact-info-item .wa p
+    {
+        text-indent: -133px;
+    }
+    .contact .contact-info-item .email p
+    {
+        text-indent: -47px;
+        margin-bottom: 30px;
+    }
+    .contact .contact-info-item .git p
+    {
+        text-indent: -157px;
+    }
+    .contact-sub-title
+    {
+        text-align: left;   
+        margin-bottom: 30px;
+    }
+    .contact-title
+    {
+        text-align: left;
+        font-size: 23px;
+    }
+    h4.contact-sub-title
+    {
+        margin-bottom: 5px;
     }
 }
