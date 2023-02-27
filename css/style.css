@@ -434,8 +434,8 @@ h3.my-profession
 .about .about-content .personal-info
 {
     font-family: poppins;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 .about .about-content .personal-info .info-item
@@ -467,23 +467,52 @@ h3.my-profession
 {
     margin-top: 10px;
 }
+.about .about-header
+{
+    font-family: poppins;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: -10px;
+    
+}
+.about .about-header h3
+{
+    color: var(--text-black-900);
+    font-weight: 600;
+}
 .about .about-content .skills
 {
     font-family: poppins;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 .about .about-content .skills .skills-item
 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.about .about-content .skills .skills-item .skills-item-logo
+{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 12px 0px;
+    text-align: center;
+    transition: all 0.35 ease;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.about .about-content .skills .skills-item .skills-item-logo img
+{
+    margin-top: 15px;
+    height: 90px;
+    width: 100px;
 }
 .about .about-content .skills .skills-item h5
 {
     line-height: 40px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
@@ -1017,5 +1046,27 @@ h3.my-profession
     h4.contact-sub-title
     {
         margin-bottom: 5px;
+    }
+    .about .about-content .skills .skills-item
+    {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .about .about-content .skills .skills-item .skills-item-logo
+    {
+        padding: 12px 0px;
+        max-width: 109.7px;
+        max-height: 107px;
+    }
+    .about .about-content .skills .skills-item .skills-item-logo img
+    {
+        margin-top: 5px;
+        margin-bottom: -20px;
+        height: 53.7px;
+        width: 53.7px;
+    }
+    .about .about-content .skills .skills-item h5
+    {
+        font-size: 14px;
     }
 }
