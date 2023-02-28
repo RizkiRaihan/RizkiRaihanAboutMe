@@ -1069,4 +1069,8 @@ h3.my-profession
     {
         font-size: 14px;
     }
+    .about .about-content .timeline .timeline-text
+    {
+        text-align: left;
+    }
 }
