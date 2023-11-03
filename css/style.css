@@ -458,6 +458,7 @@ h3.my-profession
     color: var(--text-black-700);
     margin-left: 4px;
     display: inline-block;
+    white-space: nowrap;
 }
 .about .about-content .personal-info .buttons
 {
